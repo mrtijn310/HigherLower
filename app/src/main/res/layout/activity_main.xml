@@ -9,79 +9,40 @@
     android:background="#00710E"
     tools:context=".Main" >
 
-    <ImageView
-        android:layout_width="72px"
-        android:layout_height="96px"
-        android:id="@+id/imgCard1"
-        android:layout_marginTop="57dp"
-        android:layout_marginLeft="10dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/empspace"
-       />
-
-    <ImageView
-        android:layout_width="72px"
-        android:layout_height="96px"
-        android:id="@+id/imgCard2"
-        android:layout_marginTop="57dp"
-        android:layout_marginLeft="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/empspace"
-        />
-
-    <ImageView
-        android:layout_width="72px"
-        android:layout_height="96px"
-        android:id="@+id/imgCard3"
-        android:layout_marginTop="57dp"
-        android:layout_marginLeft="110dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/empspace"
-        />
-
-    <ImageView
-        android:layout_width="72px"
-        android:layout_height="96px"
-        android:id="@+id/imgCard4"
-        android:layout_marginTop="57dp"
-        android:layout_marginLeft="160dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/empspace"
-        />
-
-    <ImageView
-        android:layout_width="72px"
-        android:layout_height="96px"
-        android:id="@+id/imgCard5"
-        android:layout_marginTop="57dp"
-        android:layout_marginLeft="210dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/empspace"
-        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Higher"
+        android:text="Hoger"
         android:id="@+id/btHoger"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="92dp" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lower"
-        android:id="@+id/btLower"
-        android:layout_toEndOf="@+id/imgCard5"
+        android:text="Lager"
+        android:id="@+id/btLager"
         android:layout_alignTop="@+id/btHoger"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Streak : "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvStreak"
+        android:layout_alignTop="@+id/btHoger"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCurrentCard"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ace_of_spades2"
+        android:rotation="90" />
 </RelativeLayout>
